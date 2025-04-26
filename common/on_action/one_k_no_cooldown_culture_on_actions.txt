@@ -1,0 +1,29 @@
+﻿# Culture on actions.
+
+# Happens when a culture gains a tradition
+# Root = culture
+# scope:tradition = flag for the tradition added
+on_tradition_added = {
+	effect = {
+		every_player = {
+			limit = {
+				culture = root
+			}
+			trigger_event = {
+				id = culture_notification.0011
+				days = 0
+			}
+		}
+		
+		every_ruler = {
+			limit = {
+				is_ruler = yes
+				should_have_same_faith_succession_trigger = yes
+				NOT = {
+					has_realm_law = same_faith_only_law
+				}
+			}
+			add_realm_law_skip_effects = same_faith_only_law
+		}		
+	}
+}

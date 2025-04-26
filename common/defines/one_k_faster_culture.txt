@@ -1,0 +1,8 @@
+﻿NCulture = {
+	REFORMATION_PROGRESS_GAIN_BASE = 999 # (was 1.66) The base monthly progress gain when reforming. Finished at 100. Base speed at 1.66 results in minimum 5 years.
+	REFORMATION_PROGRESS_SLOWDOWN_PER_COUNTY_WITH_CULTURE = 0.00 # (was 0.2) How much slower is the reformation per county with the culture. The final progress is calculated: (TotalGain) / (NrCounties * SlowdownFactor)
+	REFORMATION_PROGRESS_REPLACE_TRADITION_MULT = 0.75 # (was 0.75) A multiplier to the total progress when replacing traditions.
+	REFORMATION_MAX_YEARS = 1 # (was 30) The slowdown per county will be capped at a value that limits the max years a reformation can take to this value. Replacing traditions will go over this limit.
+}
+
+
